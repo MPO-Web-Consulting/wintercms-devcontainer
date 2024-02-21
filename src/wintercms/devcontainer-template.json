@@ -1,0 +1,39 @@
+{
+    "id": "wintercms",
+    "version": "0.1.0",
+    "name": "Wintercms Dev Container",
+    "description": "A Wintercms Dev Container",
+    "documentationURL": "https://github.com/MPO-Web-Consulting/wintercms-devcontainer-template/tree/main/src/wintercms",
+    "licenseURL": "https://github.com/MPO-Web-Consulting/wintercms-devcontainer-template/blob/main/LICENSE",
+    "options": {
+        "phpVersion": {
+            "type": "string",
+            "description": "php version",
+            "proposals": [
+                "8.2",
+                "8.0"
+            ],
+            "default": "8.2"
+        },
+        "webServer": {
+            "type": "string",
+            "description": "web server to use",
+            "proposals": [
+                "apache",
+                "fpm"
+            ],
+            "default": "apache"
+        },
+        "cmsVersion": {
+            "type": "string",
+            "description": "wintercms version",
+            "proposals": [
+                "1.2.4"
+            ],
+            "default": "1.2.4"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
